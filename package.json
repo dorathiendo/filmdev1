@@ -6,7 +6,7 @@
     "node": "6.9.4"
   },
   "scripts": {
-    "start": "node ./bin/app"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
