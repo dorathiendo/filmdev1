@@ -28,6 +28,19 @@ var colorDev = {
             var devTime = parseFloat($(this).parents('.step').attr('duration'));
             $(this).parents('.step').attr('duration', devTime * stopsOption);
         });
+        $('button.startAll').click(function () {
+            var tr = $(this).parents('tr');
+            var progress = tr.find('.progress div');
+            var timerStr = tr.find('.timer');
+            var timer = 0, max = parseInt(tr.attr('duration'));
+            var t = setInterval(function () {
+                timer++;
+                var percentage = (timer / max) * 100;
+                progress.css('width', percentage + '%');
+                timerStr.html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+                progress.html('<span class="blink_me" style="color:white;">Agitate</span>');
+            }, 1000);
+        });
     },
     startSoakTimer: function (duration, stepEl) {
         var timer = 0;
