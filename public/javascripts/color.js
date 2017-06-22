@@ -31,15 +31,22 @@ var colorDev = {
         $('button.startAll').click(function () {
             var tr = $(this).parents('tr');
             var progress = tr.find('.progress div');
-            var timerStr = tr.find('.timer');
-            var timer = 0, max = parseInt(tr.attr('duration'));
-            var t = setInterval(function () {
-                timer++;
-                var percentage = (timer / max) * 100;
-                progress.css('width', percentage + '%');
-                timerStr.html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
-                progress.html('<span class="blink_me" style="color:white;">Agitate</span>');
-            }, 1000);
+            var duration = parseInt(tr.attr('duration'));
+            var type = tr.attr('type');
+            switch(type){
+                case 'soak':
+                    that.startSoakTimer(duration, tr);
+                    break;
+                case 'agitate':
+                    that.startAgitateSoakTimer(duration, tr);
+                    break;
+                case 'dev':
+                    that.startDevTimer(duration, tr);
+                    break;
+                default:
+                    return;
+            }
+            $(this).attr('disabled', true);
         });
     },
     startSoakTimer: function (duration, stepEl) {
@@ -58,6 +65,7 @@ var colorDev = {
 
             if (timer >= max) {
                 playAudio('beep');
+                stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
         }, 1000);
@@ -94,6 +102,7 @@ var colorDev = {
 
             if (timer >= max) {
                 playAudio('beep');
+                stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
 
@@ -128,6 +137,7 @@ var colorDev = {
 
             if (timer >= max) {
                 playAudio('beep');
+                stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
 

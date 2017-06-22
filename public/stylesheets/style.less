@@ -135,6 +135,7 @@ input[type="submit"] {
       width: 100%;
       object-fit: cover;
       z-index: -1;
+      opacity: 0.3;
     }
     .step {
       display:table-cell;
@@ -177,9 +178,12 @@ input[type="submit"] {
 
 .table-wrapper {
   padding: 5% 10%;
+  vertical-align: middle;
+  display: table-cell;
   table {
     width: 100%;
     td {
+      letter-spacing: 2px;
       vertical-align: top;
       width: 80%;
       padding-bottom: 10px;
@@ -187,6 +191,10 @@ input[type="submit"] {
         padding-right: 10px;
         text-align: right;
         width: 10%;
+        span {
+          background-color: black;
+          padding: 5px;
+        }
       }
       &:not(:last-child){
         padding-top: 5px;
@@ -196,6 +204,10 @@ input[type="submit"] {
       }
       .progress div {
         color: black;
+      }
+      .timer {
+        background-color: black;
+        padding: 5px;
       }
       button {
         float: right;

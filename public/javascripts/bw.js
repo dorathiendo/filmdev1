@@ -41,9 +41,9 @@ var bwDev = {
             var type = step.attr('timetype');
             var duration = step.attr('duration');
             switch(type){
-                //case 'soak':
-                //    that.startSoakTimer(duration, step);
-                //    break;
+                case 'soak':
+                    that.startSoakTimer(duration, step);
+                    break;
                 case 'devShort':
                     that.startDevShortTimer(duration, step);
                     break;
@@ -55,6 +55,27 @@ var bwDev = {
             }
             $(this).attr('disabled', true);
         });
+    },
+    startSoakTimer: function (duration, stepEl) {
+        var timer = 0;
+        var max = parseInt(stepEl.attr('duration'));
+        stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
+        playAudio('wait');
+        stepEl.find('.timer').css('visibility', 'visible');
+        var t = setInterval(function () {
+            timer++;
+            var percentage = (timer / max) * 100;
+
+            stepEl.find('.progress .progress-bar').css('width', percentage + '%');
+            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+
+
+            if (timer >= max) {
+                playAudio('beep');
+                stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
+                clearInterval(t);
+            }
+        }, 1000);
     },
     startDevTimer: function (duration, stepEl) {
         var timer = 0;
@@ -77,7 +98,7 @@ var bwDev = {
 
             if((invertMark == 60) && (timer < (max-15))){ //invert every 1 min after
                 playAudio('invert');
-                stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 4x</span>');
+                stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 8x</span>');
                 invertMark = 0;
             }
 
@@ -117,7 +138,7 @@ var bwDev = {
 
             if((invertMark == 60) && (timer < (max-15))){ //invert every 1 min after
                 playAudio('invert');
-                stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 4x</span>');
+                stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 8x</span>');
                 invertMark = 0;
             }
 
