@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    var noSleep = new NoSleep();
+    noSleep.enable();
     initSounds();
     if(window.location.pathname.includes('color')){
         colorDev.init();
@@ -32,9 +34,6 @@ function convertSecsToTime(seconds){
 function playAudio(type){
     $('#' + type + '_btn').trigger('click');
 }
-
-
-
 
 
 
