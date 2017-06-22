@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e5431e-f475-4f7d-8081-a22d985410c4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/step1.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/step1.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/step1.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/step1.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/step2.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/step2.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/step3.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/step3.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/step4.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/step4.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/step5.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/step5.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/step6.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/step6.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/steps.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/steps.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/colorSteps/steps.hbs" afterPath="$PROJECT_DIR$/views/colorSteps/steps.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
     </list>
     <ignored path="filmdev1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="steps.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/bwSteps/steps.hbs">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.875">
-              <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bw.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/bw.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.029041626">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.12578617">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -80,7 +59,6 @@
         <option value="$PROJECT_DIR$/views/bwSteps/step2.hbs" />
         <option value="$PROJECT_DIR$/views/bwSteps/step3.hbs" />
         <option value="$PROJECT_DIR$/views/bwSteps/step4.hbs" />
-        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/views/bwSteps/step5.hbs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -95,6 +73,7 @@
         <option value="$PROJECT_DIR$/views/colorSteps/step6.hbs" />
         <option value="$PROJECT_DIR$/views/bwSteps/steps.hbs" />
         <option value="$PROJECT_DIR$/public/javascripts/bw.js" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -707,14 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26258206">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.7777777">
@@ -843,26 +814,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/bwSteps/step1.hbs">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/bw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/bwSteps/steps.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875">
+        <state vertical-scroll-proportion="0.52031714">
           <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/bw.js">
+    <entry file="file://$PROJECT_DIR$/views/bwSteps/step1.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029041626">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.3121903">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12578617">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
