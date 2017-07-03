@@ -2,10 +2,10 @@
     <div class="step-wrapper">
         <img src="/images/background/bw/5.jpg" alt=""/>
         <div class="table-wrapper">
-            <h1>C-41 Unicolor</h1>
+            <h1>Ilfsol3</h1>
             <table>
                 <tbody>
-                <tr duration="60" type="soak">
+                <tr class="allStep" class="allStep" duration="60" type="soak">
                     <td><span>Prewash</span></td>
                     <td>
                         <div class="progress">
@@ -15,17 +15,45 @@
                     </td>
                     <td><button class="startAll">Start</button></td>
                 </tr>
-                <tr duration="210" type="dev">
-                    <td><span>Developer</span></td>
+                <tr class="allStep" duration="0" type="dev">
+                    <td><span class="edit">Developer</span></td>
                     <td>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped active instruct" role="progressbar">Ready</div>
                         </div>
                         <span class="timer">00:00/00:00</span>
+                        <div id="devTimes" style="display:none;">
+                            <form id="calc_dev_times">
+                                <select name="temp" id="temp_options" class="form-control">
+                                    <option value="68F">20C/68F</option>
+                                    <option value="75F">24C/75F</option>
+                                </select>
+                                <select name="film_type" id="film_type_options" class="form-control">
+                                    <option value="">Ilford HP5 Plus</option>
+                                    <option value="">Kodak 400 Tmax</option>
+                                </select>
+                                <select name="iso" id="iso_options" class="form-control">
+                                    <option value="">200</option>
+                                    <option value="">400</option>
+                                    <option value="">800</option>
+                                </select>
+                                <select name="dilution" id="dilution_options" class="form-control">
+                                    <option value="">1+9</option>
+                                    <option value="">1+14</option>
+                                </select>
+                                <select name="push" id="stops_push" class="form-control">
+                                    <option value="1">None</option>
+                                    <option value="1.5">Push 1 stop</option>
+                                    <option value="2.25">Push 2 stops</option>
+                                    <option value="4.5">Push 3 stops</option>
+                                </select>
+                            </form>
+                            <h2 id="results"></h2>
+                        </div>
                     </td>
                     <td><button class="startAll">Start</button></td>
                 </tr>
-                <tr duration="120" type="dev">
+                <tr class="allStep" duration="120" type="dev">
                     <td><span>Stop Bath</span></td>
                     <td>
                         <div class="progress">
@@ -35,7 +63,7 @@
                     </td>
                     <td><button class="startAll">Start</button></td>
                 </tr>
-                <tr duration="420" type="dev">
+                <tr class="allStep" duration="420" type="dev">
                     <td><span>Fix</span></td>
                     <td>
                         <div class="progress">
@@ -45,7 +73,7 @@
                     </td>
                     <td><button class="startAll">Start</button></td>
                 </tr>
-                <tr duration="90" type="soak">
+                <tr class="allStep" duration="90" type="soak">
                     <td><span>Wash</span></td>
                     <td>
                         <div class="progress">
@@ -55,7 +83,7 @@
                     </td>
                     <td><button class="startAll">Start</button></td>
                 </tr>
-                <tr duration="120" type="soak">
+                <tr class="allStep" duration="120" type="soak">
                     <td><span>Photo Flo</span></td>
                     <td>
                         <div class="progress">

@@ -35,6 +35,7 @@ var bwDev = {
             console.log(time);
             $('#results').html('Dev for ' + (time*push) + ' minutes');
             $(this).parents('.step').attr('duration', time * 60 * push);
+            $(this).parents('.allStep').attr('duration', time * 60 * push);
         });
         $('.step button.start').click(function(){
             var step = $(this).parents('.step');
@@ -49,6 +50,29 @@ var bwDev = {
                     break;
                 case 'dev':
                     that.startDevTimer(duration, step);
+                    break;
+                default:
+                    return;
+            }
+            $(this).attr('disabled', true);
+        });
+        $('.edit').click(function(e){
+            $('#devTimes').slideToggle('fast');
+        });
+        $('button.startAll').click(function () {
+            var tr = $(this).parents('tr');
+            var progress = tr.find('.progress div');
+            var duration = parseInt(tr.attr('duration'));
+            var type = tr.attr('type');
+            switch(type){
+                case 'soak':
+                    that.startSoakTimer(duration, tr);
+                    break;
+                case 'agitate':
+                    that.startAgitateSoakTimer(duration, tr);
+                    break;
+                case 'dev':
+                    that.startDevTimer(duration, tr);
                     break;
                 default:
                     return;
