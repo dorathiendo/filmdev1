@@ -4,7 +4,7 @@ var bwDev = {
     },
     events: function(){
         var that = this;
-        $('#dilute').submit(function(){
+        $('#dilute').change(function(){
             event.preventDefault();
             var obj = (function(formArray){
                 var returnArray = {};
