@@ -68,8 +68,8 @@ var bwDev = {
                 case 'soak':
                     that.startSoakTimer(duration, tr);
                     break;
-                case 'agitate':
-                    that.startAgitateSoakTimer(duration, tr);
+                case 'devShort':
+                    that.startDevShortTimer(duration, tr);
                     break;
                 case 'dev':
                     that.startDevTimer(duration, tr);
