@@ -15,4 +15,8 @@ router.get('/images/:type', function(req, res, next){
   }
 });
 
+router.get('/alexa', function(req, res, next){
+  res.send('Alexa test');
+});
+
 module.exports = router;
