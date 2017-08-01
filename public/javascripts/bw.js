@@ -37,7 +37,7 @@ var bwDev = {
             $(this).parents('.step').attr('duration', time * 60 * push);
             $(this).parents('.allStep').attr('duration', time * 60 * push);
         });
-        $('.step button.start').click(function(){
+        $('.step .start').click(function(){
             var step = $(this).parents('.step');
             var type = step.attr('timetype');
             var duration = step.attr('duration');

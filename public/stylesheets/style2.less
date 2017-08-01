@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins');
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+
+  //font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: whitesmoke;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    background-image: url(/images/icons/png/menu-3.png);
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.side-nav {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  padding: 20px;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  z-index: 2;
+  left: -300px;
+  transition: all 100ms linear 0s;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+  &.openSideNav{
+    left: 0;
+  }
+  button {
+    background-image: url(/images/icons/png/close.png);
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    float: right;
+  }
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+
+a {
+  //background-color: lightgrey;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  color: black;
+  &:hover, &:active, &:focus{
+    text-decoration: none;
+    color: black;
+    //background-color: whitesmoke;
+  }
+}
+
+.steps-wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .step-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    .step {
+      display: table-cell;
+      vertical-align: middle;
+      h1 {
+        border-bottom: 2px solid black;
+        padding: 10px;
+      }
+      #push-wrapper{
+        margin: 20px;
+      }
+    }
+  }
+}
+
+.timer {
+  font-size: 6em;
+  display: block;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.buttons_wrap {
+  margin-top: 40px;
+  text-align: center;
+  a {
+    display: inline-block;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    &.start {
+      background-image: url(/images/icons/png/play-button.png);
+    }
+    &.next {
+      background-image: url(/images/icons/png/next.png);
+    }
+    &.back {
+      background-image: url(/images/icons/png/back.png);
+    }
+  }
+}
+
+.blink_me {
+  animation: blinker 500ms linear infinite;
+}
+
+.blink_me_limited {
+  animation-name: blinker;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 4;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

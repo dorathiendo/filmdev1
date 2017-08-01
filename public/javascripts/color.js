@@ -4,7 +4,7 @@ var colorDev = {
     },
     events: function(){
         var that = this;
-        $('.step button.start').click(function(){
+        $('.step .start').click(function(){
             var step = $(this).parents('.step');
             var type = step.attr('timetype');
             var duration = step.attr('duration');
@@ -60,7 +60,7 @@ var colorDev = {
             var percentage = (timer / max) * 100;
 
             stepEl.find('.progress .progress-bar').css('width', percentage + '%');
-            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+            stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
 
             if (timer >= max) {
@@ -82,7 +82,7 @@ var colorDev = {
             var percentage = (timer / max) * 100;
 
             stepEl.find('.progress .progress-bar').css('width', percentage + '%');
-            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+            stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if (timer == 15) {
                 playAudio('wait');
@@ -123,7 +123,7 @@ var colorDev = {
             var percentage = (timer / max) * 100;
 
             stepEl.find('.progress .progress-bar').css('width', percentage + '%');
-            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+            stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if (timer == 15) {
                 playAudio('wait');

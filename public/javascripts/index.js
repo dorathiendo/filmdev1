@@ -7,6 +7,9 @@ $(document).ready(function(){
     } else if(window.location.pathname.includes('bw')){
         bwDev.init();
     }
+    $('header button, .side-nav button').click(function(){
+       $('.side-nav').toggleClass('openSideNav');
+    });
 });
 
 function initSounds(){
