@@ -13,6 +13,7 @@ body, html {
 }
 
 header {
+  top: 0;
   background-color: whitesmoke;
   padding: 20px;
   position: fixed;
@@ -48,6 +49,9 @@ header {
   -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
   box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+  a {
+    text-align: left;
+  }
   &.openSideNav{
     left: 0;
   }
@@ -124,6 +128,11 @@ a {
           }
         }
       }
+      .timer {
+        font-size: 6em;
+        display: block;
+        text-align: center;
+      }
       h1 {
         border-bottom: 2px solid black;
         padding: 10px;
@@ -135,11 +144,36 @@ a {
   }
 }
 
-.timer {
-  font-size: 6em;
-  display: block;
-  //padding: 20px 20px 0 20px;
-  text-align: center;
+.results {
+  padding-top: 60px;
+  display: table;
+  width: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    li {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .form {
+    display: table-cell;
+    padding: 20px;
+    input {
+      display: block;
+      border: none;
+      border-color: transparent;
+      outline: none;
+      margin: 10px 0;
+      &[type="text"]{
+        border-bottom: 2px solid black;
+      }
+    }
+  }
 }
 
 

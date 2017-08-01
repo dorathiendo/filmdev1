@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var color = require('./routes/color');
 var bw = require('./routes/bw');
 var users = require('./routes/users');
+var results = require('./routes/results');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/color', color);
 app.use('/bw', bw);
+app.use('/results', results);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
