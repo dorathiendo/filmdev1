@@ -91,7 +91,7 @@ var bwDev = {
             var percentage = (timer / max) * 100;
 
             stepEl.find('.progress .progress-bar').css('width', percentage + '%');
-            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+            stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
 
             if (timer >= max) {
@@ -113,7 +113,7 @@ var bwDev = {
             var percentage = (timer / max) * 100;
 
             stepEl.find('.progress .progress-bar').css('width', percentage + '%');
-            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+            stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if(timer == 60){ //agitate for first min
                 playAudio('wait');
@@ -153,7 +153,7 @@ var bwDev = {
             var percentage = (timer / max) * 100;
 
             stepEl.find('.progress .progress-bar').css('width', percentage + '%');
-            stepEl.find('.timer').html(convertSecsToTime(timer) + '/' + convertSecsToTime(max));
+            stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if(timer == 30){ //agitate for first 30 secs
                 playAudio('wait');
