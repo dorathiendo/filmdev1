@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var noSleep = new NoSleep();
     noSleep.enable();
-    initSounds();
+    //initSounds();
     if(window.location.pathname.includes('color')){
         colorDev.init();
     } else if(window.location.pathname.includes('bw')){
@@ -36,6 +36,27 @@ function convertSecsToTime(seconds){
 
 function playAudio(type){
     $('#' + type + '_btn').trigger('click');
+}
+
+var sounds = {
+    beep: new Howl({
+        src: ['/sounds/beep.mp3']
+    }),
+    agitate: new Howl({
+        src: ['/sounds/agitate.mp3']
+    }),
+    invert4: new Howl({
+        src: ['/sounds/invert.mp3']
+    }),
+    invert8: new Howl({
+        src: ['/sounds/invert8.mp3']
+    }),
+    wait: new Howl({
+        src: ['/sounds/wait.mp3']
+    }),
+    pour: new Howl({
+        src: ['/sounds/pour.mp3']
+    })
 }
 
 

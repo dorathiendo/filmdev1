@@ -84,7 +84,7 @@ var bwDev = {
         var timer = 0;
         var max = parseInt(stepEl.attr('duration'));
         stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
-        playAudio('wait');
+        sounds.wait.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
             timer++;
@@ -95,7 +95,7 @@ var bwDev = {
 
 
             if (timer >= max) {
-                playAudio('beep');
+                sounds.beep.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
@@ -106,7 +106,7 @@ var bwDev = {
         var max = parseFloat(stepEl.attr('duration'));
         var invertMark = 0;
         stepEl.find('.instruct').html('<span class="blink_me">Agitate</span>');
-        playAudio('agitate');
+        sounds.agitate.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
             timer++;
@@ -116,23 +116,23 @@ var bwDev = {
             stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if(timer == 60){ //agitate for first min
-                playAudio('wait');
+                sounds.wait.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
             }
 
             if((invertMark == 60) && (timer < (max-15))){ //invert every 1 min after
-                playAudio('invert');
+                sounds.invert8.play();
                 stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 8x</span>');
                 invertMark = 0;
             }
 
             if(timer == (max-15)){ //pour out
-                playAudio('pour');
+                sounds.pour.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Pour Out</span>');
             }
 
             if (timer >= max) {
-                playAudio('beep');
+                sounds.beep.play();
                 clearInterval(t);
             }
 
@@ -146,7 +146,7 @@ var bwDev = {
         var max = parseFloat(stepEl.attr('duration'));
         var invertMark = 0;
         stepEl.find('.instruct').html('<span class="blink_me">Agitate</span>');
-        playAudio('agitate');
+        sounds.agitate.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
             timer++;
@@ -156,23 +156,23 @@ var bwDev = {
             stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if(timer == 30){ //agitate for first 30 secs
-                playAudio('wait');
+                sounds.wait.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
             }
 
             if((invertMark == 60) && (timer < (max-15))){ //invert every 1 min after
-                playAudio('invert');
+                sounds.invert8.play();
                 stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 8x</span>');
                 invertMark = 0;
             }
 
             if(timer == (max-15)){ //pour out
-                playAudio('pour');
+                sounds.pour.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Pour Out</span>');
             }
 
             if (timer >= max) {
-                playAudio('beep');
+                sounds.beep.play();
                 clearInterval(t);
             }
 

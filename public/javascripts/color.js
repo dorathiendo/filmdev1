@@ -53,7 +53,7 @@ var colorDev = {
         var timer = 0;
         var max = parseInt(stepEl.attr('duration'));
         stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
-        playAudio('wait');
+        sounds.wait.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
             timer++;
@@ -64,7 +64,7 @@ var colorDev = {
 
 
             if (timer >= max) {
-                playAudio('beep');
+                sounds.beep.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
@@ -75,7 +75,7 @@ var colorDev = {
         var max = parseInt(stepEl.attr('duration'));
         var thirtySecCount = 0;
         stepEl.find('.instruct').html('<span class="blink_me">Agitate</span>');
-        playAudio('agitate');
+        sounds.agitate.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
             timer++;
@@ -85,23 +85,23 @@ var colorDev = {
             stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if (timer == 15) {
-                playAudio('wait');
+                sounds.wait.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
             }
 
             if ((thirtySecCount == 30) && (timer < (max - 15))) {
-                playAudio('invert');
+                sounds.invert4.play();
                 stepEl.find('.instruct').html('<span class="blink_me_limited">Invert 4x</span>');
                 thirtySecCount = 0;
             }
 
             if (timer == (max - 15)) {
-                playAudio('pour');
+                sounds.pour.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Pour Out</span>');
             }
 
             if (timer >= max) {
-                playAudio('beep');
+                sounds.beep.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
@@ -116,7 +116,7 @@ var colorDev = {
         var max = parseInt(stepEl.attr('duration'));
         var thirtySecCount = 0;
         stepEl.find('.instruct').html('<span class="blink_me">Agitate</span>');
-        playAudio('agitate');
+        sounds.agitate.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
             timer++;
@@ -126,17 +126,17 @@ var colorDev = {
             stepEl.find('.timer').html(convertSecsToTime(max-timer));
 
             if (timer == 15) {
-                playAudio('wait');
+                sounds.wait.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
             }
 
             if (timer == (max - 15)) {
-                playAudio('pour');
+                sounds.pour.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Pour Out</span>');
             }
 
             if (timer >= max) {
-                playAudio('beep');
+                sounds.beep.play();
                 stepEl.find('.instruct').html('<span class="blink_me">Done</span>');
                 clearInterval(t);
             }
