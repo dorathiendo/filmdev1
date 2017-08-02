@@ -11,9 +11,37 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+.colorMode {
+  .steps-wrapper {
+    background-color: gold;
+  }
+  .timer {
+    color: white;
+  }
+  .side-nav {
+    background-color: black;
+    a {
+      color: white;
+    }
+    button {
+      filter: invert(100%);
+    }
+  }
+}
+
+.bwMode {
+  .steps-wrapper {
+    background-color: white;
+  }
+  .timer {
+    color: green;
+  }
+}
+
 header {
   top: 0;
-  background-color: whitesmoke;
+  background-color: black;
+  color: white;
   padding: 20px;
   position: fixed;
   text-align: center;
@@ -32,6 +60,7 @@ header {
     background-repeat: no-repeat;
     height: 20px;
     width: 20px;
+    filter: invert(100%);
   }
 }
 
@@ -128,6 +157,7 @@ a {
         }
       }
       .timer {
+        font-weight: bold;
         font-size: 6em;
         display: block;
         text-align: center;
@@ -175,6 +205,25 @@ a {
     }
   }
 }
+
+#index_button_wrap {
+  a {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    &#color {
+      background-image: url(/images/portra.jpg);
+    }
+
+    &#bw {
+      background-image: url(/images/ilford.jpg);
+    }
+  }
+}
+
+
 
 
 .blink_me {

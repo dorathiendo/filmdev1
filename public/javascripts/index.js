@@ -10,6 +10,14 @@ $(document).ready(function(){
     $('header button, .side-nav button').click(function(){
        $('.side-nav').toggleClass('openSideNav');
     });
+    var scheme = window.location.pathname;
+    if(scheme.indexOf('color') < 0){
+        $('body').removeClass('colorMode');
+        $('body').addClass('bwMode');
+    } else {
+        $('body').removeClass('bwMode');
+        $('body').addClass('colorMode');
+    }
 });
 
 function initSounds(){
