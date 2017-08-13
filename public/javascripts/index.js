@@ -1,49 +1,26 @@
 $(document).ready(function(){
     var noSleep = new NoSleep();
     noSleep.enable();
-    //initSounds();
-    if(window.location.pathname.includes('color')){
+
+    var scheme = window.location.pathname;
+
+    if(scheme.indexOf('color') > -1){
         colorDev.init();
-    } else if(window.location.pathname.includes('bw')){
+        $('body').removeClass('bwMode');
+        $('body').addClass('colorMode');
+    } else if(scheme.indexOf('bw') > -1){
         bwDev.init();
+        $('body').removeClass('colorMode');
+        $('body').addClass('bwMode');
     }
+
     $('header button, .side-nav button').click(function(){
        $('.side-nav').toggleClass('openSideNav');
     });
-    var scheme = window.location.pathname;
-    if(scheme.indexOf('color') < 0){
-        $('body').removeClass('colorMode');
-        $('body').addClass('bwMode');
-    } else {
-        $('body').removeClass('bwMode');
-        $('body').addClass('colorMode');
-    }
 });
-
-function initSounds(){
-    $('#beep_btn').click(function(){
-        $('#beep_sound')[0].play();
-    });
-    $('#agitate_btn').click(function(){
-        $('#agitate_sound')[0].play();
-    });
-    $('#invert_btn').click(function(){
-        $('#invert_sound')[0].play();
-    });
-    $('#wait_btn').click(function(){
-        $('#wait_sound')[0].play();
-    });
-    $('#pour_btn').click(function(){
-        $('#pour_sound')[0].play();
-    });
-}
 
 function convertSecsToTime(seconds){
     return moment().minutes(0).seconds(seconds).format('mm:ss');
-}
-
-function playAudio(type){
-    $('#' + type + '_btn').trigger('click');
 }
 
 var sounds = {
