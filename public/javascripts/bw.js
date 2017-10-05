@@ -79,6 +79,10 @@ var bwDev = {
             }
             $(this).attr('disabled', true);
         });
+        $('#custom_time').change(function(e){
+            var time = $(e.currentTarget).val();
+            $(this).parents('.step').attr('duration', time * 60);
+        });
     },
     startSoakTimer: function (duration, stepEl) {
         var timer = 0;
