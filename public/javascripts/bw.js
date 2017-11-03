@@ -1,6 +1,7 @@
 var bwDev = {
     init: function(){
         this.events();
+        this.timerStarted = false;
     },
     events: function(){
         var that = this;
@@ -37,24 +38,33 @@ var bwDev = {
             $(this).parents('.step').attr('duration', time * 60 * push);
             $(this).parents('.allStep').attr('duration', time * 60 * push);
         });
-        $('.step .start').click(function(){
-            var step = $(this).parents('.step');
-            var type = step.attr('timetype');
-            var duration = step.attr('duration');
-            switch(type){
-                case 'soak':
-                    that.startSoakTimer(duration, step);
-                    break;
-                case 'devShort':
-                    that.startDevShortTimer(duration, step);
-                    break;
-                case 'dev':
-                    that.startDevTimer(duration, step);
-                    break;
-                default:
-                    return;
+        $(window).keypress(function (e) {
+            if (e.keyCode === 0 || e.keyCode === 32) {
+                e.preventDefault();
+                $('.step .start').trigger('click');
             }
-            $(this).attr('disabled', true);
+        });
+        $('.step .start').click(function(){
+            if(!that.timerStarted){
+                that.timerStarted = true;
+                var step = $(this).parents('.step');
+                var type = step.attr('timetype');
+                var duration = step.attr('duration');
+                switch(type){
+                    case 'soak':
+                        that.startSoakTimer(duration, step);
+                        break;
+                    case 'devShort':
+                        that.startDevShortTimer(duration, step);
+                        break;
+                    case 'dev':
+                        that.startDevTimer(duration, step);
+                        break;
+                    default:
+                        return;
+                }
+                $(this).attr('disabled', true);
+            }
         });
         $('.edit').click(function(e){
             $('#devTimes').slideToggle('fast');
