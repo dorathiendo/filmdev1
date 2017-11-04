@@ -97,7 +97,7 @@ var bwDev = {
     startSoakTimer: function (duration, stepEl) {
         var timer = 0;
         var max = parseInt(stepEl.attr('duration'));
-        stepEl.find('.instruct').html('<span class="blink_me">Wait</span>');
+        stepEl.find('.instruct').addClass('show').html('<span class="blink_me">Wait</span>');
         sounds.wait.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
@@ -119,7 +119,7 @@ var bwDev = {
         var timer = 0;
         var max = parseFloat(stepEl.attr('duration'));
         var invertMark = 0;
-        stepEl.find('.instruct').html('<span class="blink_me">Agitate</span>');
+        stepEl.find('.instruct').addClass('show').html('<span class="blink_me">Agitate</span>');
         sounds.agitate.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
@@ -159,7 +159,7 @@ var bwDev = {
         var timer = 0;
         var max = parseFloat(stepEl.attr('duration'));
         var invertMark = 0;
-        stepEl.find('.instruct').html('<span class="blink_me">Agitate</span>');
+        stepEl.find('.instruct').addClass('show').html('<span class="blink_me">Agitate</span>');
         sounds.agitate.play();
         stepEl.find('.timer').css('visibility', 'visible');
         var t = setInterval(function () {
