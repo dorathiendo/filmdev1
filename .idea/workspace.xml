@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23e5431e-f475-4f7d-8081-a22d985410c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/bw.js" afterPath="$PROJECT_DIR$/public/javascripts/bw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/color.js" afterPath="$PROJECT_DIR$/public/javascripts/color.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style2.css" afterPath="$PROJECT_DIR$/public/stylesheets/style2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style2.less" afterPath="$PROJECT_DIR$/public/stylesheets/style2.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/step2.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/step2.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/step3.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/step3.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/step4.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/step4.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/step5.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/step5.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bwSteps/step6.hbs" afterPath="$PROJECT_DIR$/views/bwSteps/step6.hbs" />
     </list>
     <ignored path="filmdev1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +25,8 @@
       <file leaf-file-name="style2.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style2.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+            <state relative-caret-position="299">
+              <caret line="150" column="19" lean-forward="false" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -53,8 +45,8 @@
       <file leaf-file-name="step3.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/bwSteps/step3.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="47" />
+            <state relative-caret-position="645">
+              <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -64,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/views/colorSteps/step6.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="47" />
+              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -83,7 +75,7 @@
       <file leaf-file-name="bw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/bw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-931">
+            <state relative-caret-position="2415">
               <caret line="161" column="49" lean-forward="false" selection-start-line="161" selection-start-column="49" selection-end-line="161" selection-end-column="49" />
               <folding />
             </state>
@@ -93,7 +85,7 @@
       <file leaf-file-name="color.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/color.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="1905">
               <caret line="127" column="49" lean-forward="false" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
               <folding />
             </state>
@@ -180,9 +172,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="x" value="54" />
+    <option name="y" value="86" />
     <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -202,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,8 +242,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,12 +337,13 @@
       <option name="presentableId" value="Default" />
       <updated>1497115924785</updated>
       <workItem from="1509744090600" duration="2051000" />
-      <workItem from="1509824529056" duration="1398000" />
+      <workItem from="1509824529056" duration="1524000" />
+      <workItem from="1510171073988" duration="132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3449000" />
+    <option name="totallyTimeSpent" value="3707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -358,7 +352,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22973925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45524296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18030691" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -372,6 +365,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45524296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -638,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,13 +653,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/bw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-931">
+        <state relative-caret-position="2415">
           <caret line="161" column="49" lean-forward="false" selection-start-line="161" selection-start-column="49" selection-end-line="161" selection-end-column="49" />
           <folding />
         </state>
@@ -684,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/color.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="1905">
           <caret line="127" column="49" lean-forward="false" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
           <folding />
         </state>
@@ -692,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/bwSteps/step3.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="47" />
+        <state relative-caret-position="645">
+          <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -709,15 +699,15 @@
     <entry file="file://$PROJECT_DIR$/views/colorSteps/step6.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="47" />
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style2.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        <state relative-caret-position="299">
+          <caret line="150" column="19" lean-forward="false" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
           <folding />
         </state>
       </provider>
